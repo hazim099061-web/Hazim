@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniShare | تواصل معنا</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ربط ملف الـ CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل المشترك -->
+    <nav>
+        <div class="logo"><i class="fa-solid fa-book-open-reader"></i> UniShare</div>
+        <ul class="nav-links">
+            <li><a href="home.html">المكتبة الرئيسية</a></li>
+            <li><a href="add-book.html">إضافة كتاب</a></li>
+            <li><a href="contact.html" class="active">تواصل معنا</a></li>
+            <li><a href="index.html" style="background:#dc2626;">خروج</a></li>
+        </ul>
+    </nav>
+
+    <!-- محتوى صفحة التواصل -->
+    <div class="contact-wrapper">
+        <!-- صندوق إرسال الرسالة -->
+        <div class="contact-box">
+            <h2>أرسل لنا رسالة أو مقترح</h2>
+            <form action="#" method="POST" onsubmit="alert('تم إرسال رسالتك بنجاح، شكراً لتواصلك!'); return false;">
+                <div class="input-box">
+                    <label>الاسم الكامل</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="اسمك الثلاثي" required>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label>البريد الإلكتروني</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="example@mail.com" required>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label>نص الرسالة أو الشكوى</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <textarea rows="4" placeholder="اكتب استفسارك أو مشكلتك هنا بوضوح..." style="resize:none; border:none; background:transparent; width:100%; outline:none;" required></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn">إرسال الرسالة الآن <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+        <!-- صندوق معلومات الكلية والدعم -->
+        <div class="info-box">
+            <div>
+                <h2>معلومات الدعم الفني</h2>
+                <p style="margin-bottom: 30px; opacity: 0.85;">إذا واجهت أي مشاكل في تحميل الكتب أو روابط غير صالحة، تفضل بالتواصل معنا:</p>
+                
+                <div class="info-item"><i class="fa-solid fa-location-dot"></i><span>جامعة الجزيرة\كلية العلوم الرياضية والحاسوب</span></div>
+                <div class="info-item"><i class="fa-solid fa-envelope"></i><span>hazim099061@gmail.com</span></div>
+                <div class="info-item"><i class="fa-solid fa-phone"></i><span>+249116088234</span></div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>جميع الحقوق محفوظة بواسطة <span>حازم محبوب</span> &copy; 2026</p>
+    </footer>
+</body>
+</html>
