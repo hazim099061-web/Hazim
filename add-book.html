@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniShare | إضافة كتاب جديد</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2 family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ربط ملف الـ CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل المشترك -->
+    <nav>
+        <div class="logo"><i class="fa-solid fa-book-open-reader"></i> UniShare</div>
+        <ul class="nav-links">
+            <li><a href="home.html">المكتبة الرئيسية</a></li>
+            <li><a href="add-book.html" class="active">إضافة كتاب</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="index.html" style="background:#dc2626;">خروج</a></li>
+        </ul>
+    </nav>
+
+    <!-- واجهة إضافة كتاب -->
+    <div class="form-container">
+        <h2><i class="fa-solid fa-cloud-arrow-up"></i> ساهم برفع كتابك للموقع</h2>
+        <p>املأ البيانات بالأسفل لتوفير المرجع مجاناً لجميع زملائك في الكلية ليستفيد الجميع</p>
+        
+        <form action="#" method="POST" onsubmit="alert('تم إرسال كتابك بنجاح للمراجعة وسيظهر للجميع فوراً!'); return false;">
+            <div class="input-box">
+                <label>اسم الكتاب الأكاديمي</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-book"></i>
+                    <input type="text" placeholder="مثال: كتاب هياكل البيانات المتقدمة" required>
+                </div>
+            </div>
+            
+            <div class="input-box">
+                <label>تخصص الكتاب التابع للكلية</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <select required>
+                        <option value="">اختر التخصص المتاح...</option>
+                        <option value="cs">علوم حاسوب (Computer Science)</option>
+                        <option value="math">علوم رياضيات (Mathematics)</option>
+                        <option value="stats">علوم إحصاء (Statistics)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="input-box">
+                <label>رابط تحميل الـ PDF المباشر</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-link"></i>
+                    <input type="url" placeholder="ضع رابط Google Drive أو Mega الخاص بالكتاب" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn">نشر وتوفير المرجع الآن <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>جميع الحقوق محفوظة بواسطة <span>حازم محبوب</span> &copy; 2026</p>
+    </footer>
+</body>
+</html>
